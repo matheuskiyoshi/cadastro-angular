@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.app-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+}
+app-header {
+    flex-shrink: 0; 
+}
+app-footer {
+    margin-top: auto; 
+}

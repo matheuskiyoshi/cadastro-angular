@@ -1,0 +1,24 @@
+<div class="container-form">
+    <h2>Inserir / Alterar Cliente</h2>
+    <form #customerForm="ngForm" novalidate>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required [(ngModel)]="customer.name" #name="ngModel"><br><br>
+
+        <label for="data_nascimento">Data de Nascimento</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" [(ngModel)]="customer.dateOfBirth" #dateOfBirth="ngModel"><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required [(ngModel)]="customer.email" #email="ngModel"><br><br>
+
+        <label for="genero">Sexo</label>
+        <select id="genero" name="genero">
+            <option value="homem">Homem</option>
+            <option value="mulher">Mulher</option>
+        </select><br><br>
+    </form>
+</div>
+
+<div class="container-buttons-form">
+    <button class="btn btn-danger" type="reset" (click)="resetForm()">Cancelar</button>
+    <button class="btn btn-success" type="submit" (click)="onSubmit()" [disabled]="!customerForm.valid">Salvar</button>
+</div>

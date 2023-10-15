@@ -1,0 +1,52 @@
+.customer-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+.customer-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+.customer-list li:first-child {
+  font-weight: bold;
+}
+.customer-list li span {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+}
+.customer-list li:first-child span {
+  font-weight: bold;
+}
+.icon-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-right: 10px; 
+}
+
+.icon-button i {
+  font-size: 24px; 
+}
+
+.icon-button span {
+  font-size: 10px;
+  margin-top: 4px; 
+}
+
+ul{
+  max-width: 93%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  span.email {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+<header>
+    <div class="container-logo-search">
+        <div class="container-logo">
+          <h1>
+            <a [routerLink]="['/home']">LOGO</a>
+          </h1>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" [(ngModel)]="searchQuery" (keyup.enter)="onSearch()">
+          <button (click)="onSearch()"><i class="bi bi-search"></i></button>
+        </div>
+    </div>
+    <nav>
+        <li><a [routerLink]="['/home']">Menu 1</a></li>
+        <li><a [routerLink]="['/home']">Menu 2</a></li>
+        <li><a [routerLink]="['/home']">Menu 3</a></li>
+        <li><a [routerLink]="['/home']">Menu 4</a></li>
+    </nav>
+  </header>

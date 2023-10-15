@@ -1,0 +1,13 @@
+.modal-header, button{
+    background-color: rgb(25,135,84);
+}
+button{
+    border-radius: 50%;
+    border: 2px solid #008cff;
+}
+.modal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}

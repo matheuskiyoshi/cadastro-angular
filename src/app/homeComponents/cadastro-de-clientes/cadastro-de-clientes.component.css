@@ -1,0 +1,18 @@
+.container-add-clients{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    border: 2px solid black;
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-add-clients h2{
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+.container-add-clients button{
+    margin-right: 10px;
+}

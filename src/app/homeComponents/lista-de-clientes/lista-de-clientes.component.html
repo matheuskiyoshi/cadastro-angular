@@ -1,0 +1,27 @@
+<div class="customer-list">
+    <ul>
+        <li>
+            <span class="id">Id</span>
+            <span class="name">Nome</span>
+            <span class="dateOfBirth">Data Nascimento</span>
+            <span class="email">Email</span>
+            <span class="actions">Ações</span>
+        </li>
+        <li *ngFor="let customer of customers">
+            <span class="id">{{ customer.id }}</span>
+            <span class="name">{{ customer.name }}</span>
+            <span class="dateOfBirth">{{ customer.dateOfBirth | date:'dd/MM/yyyy' }}</span>
+            <span class="email">{{ customer.email }}</span>
+            <span class="actions">
+                <button class="icon-button" (click)="editCustomer(customer.id)">
+                    <i class="bi bi-pencil"></i>
+                    <span>Editar</span>
+                </button>
+                <button class="icon-button" (click)="deleteCustomer(customer.id)">
+                    <i class="bi bi-trash3"></i>
+                    <span>Excluir</span>
+                </button>
+            </span>
+        </li>
+    </ul>
+</div>

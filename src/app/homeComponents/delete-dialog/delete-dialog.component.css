@@ -1,0 +1,10 @@
+.modal-header button{
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #008cff;
+}
+.modal-body {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
