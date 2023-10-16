@@ -10,10 +10,9 @@
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required [(ngModel)]="customer.email" #email="ngModel"><br><br>
 
-        <label for="genero">Sexo</label>
-        <select id="genero" name="genero">
-            <option value="homem">Homem</option>
-            <option value="mulher">Mulher</option>
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" [(ngModel)]="selectedGender" #genero=""ngModel>
+            <option *ngFor="let genero of generos" [value]="genero">{{ genero }}</option>
         </select><br><br>
     </form>
 </div>

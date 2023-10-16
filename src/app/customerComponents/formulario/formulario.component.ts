@@ -10,6 +10,8 @@ import { ModalService } from 'src/app/services/modal.service';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent {
+  generos = ['Masculino', 'Feminino'];
+  selectedGender: string = '';
   @ViewChild('customerForm') customerForm: any;
 
   customer: Customer = {
