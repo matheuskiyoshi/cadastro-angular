@@ -28,11 +28,6 @@ export class CustomerService {
 
     this.customersSubject.next(this.customers);
   }
-  
-
-  getList(): Customer[] {
-    return this.customers;
-  }
 
   delete(id: number) {
     const index = this.customers.findIndex(customer => customer.id === id);
@@ -51,10 +46,6 @@ export class CustomerService {
   }
 
   private selectedCustomer: Customer | null = null;
-
-  setSelectedCustomer(customer: Customer) {
-    this.selectedCustomer = customer;
-  }
 
   getSelectedCustomer(): Customer | null {
     return this.selectedCustomer;
