@@ -11,7 +11,7 @@ import { ModalService } from 'src/app/services/modal.service';
 })
 export class FormularioComponent {
   generos = ['Masculino', 'Feminino'];
-  selectedGender: string = '';
+  
   @ViewChild('customerForm') customerForm: any;
 
   customer: Customer = {
@@ -19,6 +19,7 @@ export class FormularioComponent {
   name: '',
   email: '',
   dateOfBirth: new Date(),
+  gender: '',
   };
 
   constructor(private customerService: CustomerService, private router: Router, private route: ActivatedRoute, private modalService: ModalService) {
@@ -50,6 +51,7 @@ export class FormularioComponent {
       name: '',
       email: '',
       dateOfBirth: new Date(),
+      gender: '',
     };
   }
 }
