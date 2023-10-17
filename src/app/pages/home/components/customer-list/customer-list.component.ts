@@ -6,11 +6,11 @@ import { ModalService } from 'src/app/services/modal.service';
 import { DeleteService } from 'src/app/services/delete.service';
 
 @Component({
-  selector: 'app-lista-de-clientes',
-  templateUrl: './lista-de-clientes.component.html',
-  styleUrls: ['./lista-de-clientes.component.css']
+  selector: 'app-customer-list',
+  templateUrl: './customer-list.component.html',
+  styleUrls: ['./customer-list.component.css']
 })
-export class ListaDeClientesComponent implements OnInit {
+export class CustomerListComponent implements OnInit {
   customers: Customer[] = [];
 
   constructor(private customerService: CustomerService, private router: Router, private modalService: ModalService, private deleteService: DeleteService) { }

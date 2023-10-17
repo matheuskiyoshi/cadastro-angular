@@ -5,11 +5,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ModalService } from 'src/app/services/modal.service';
 
 @Component({
-  selector: 'app-formulario',
-  templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.css']
+  selector: 'app-form',
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.css']
 })
-export class FormularioComponent {
+export class FormComponent {
   generos = ['Masculino', 'Feminino'];
   
   @ViewChild('customerForm') customerForm: any;

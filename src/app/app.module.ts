@@ -1,31 +1,30 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './sharedComponents/header/header.component';
 import { FooterComponent } from './sharedComponents/footer/footer.component';
-import { CadastroDeClientesComponent } from './homeComponents/cadastro-de-clientes/cadastro-de-clientes.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CustomerComponent } from './pages/customer/customer.component';
-import { ListaDeClientesComponent } from './homeComponents/lista-de-clientes/lista-de-clientes.component';
-import { FormularioComponent } from './customerComponents/formulario/formulario.component';
-import { DeleteDialogComponent } from './homeComponents/delete-dialog/delete-dialog.component';
-import { SuccessDialogComponent } from './customerComponents/success-dialog/success-dialog.component';
+import { FormComponent } from './pages/customer/components/form/form.component';
+import { SuccessDialogComponent } from './pages/customer/components/success-dialog/success-dialog.component';
+import { CustomerRegisterComponent } from './pages/home/components/customer-register/customer-register.component';
+import { DeleteDialogComponent } from './pages/home/components/delete-dialog/delete-dialog.component';
+import { CustomerListComponent } from './pages/home/components/customer-list/customer-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CadastroDeClientesComponent,
     HomeComponent,
     CustomerComponent,
-    ListaDeClientesComponent,
-    FormularioComponent,
-    DeleteDialogComponent,
+    FormComponent,
     SuccessDialogComponent,
+    CustomerRegisterComponent,
+    DeleteDialogComponent,
+    CustomerListComponent,
   ],
   imports: [
     BrowserModule,
