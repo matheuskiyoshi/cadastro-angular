@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Customer } from '../model/customer';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -27,6 +27,13 @@ export class CustomerService {
     }
 
     this.customersSubject.next(this.customers);
+  }
+
+  private deleteCustomerSource = new Subject<number>();
+  deleteCustomer$ = this.deleteCustomerSource.asObservable();
+
+  emitDeleteCustomer(id: number) {
+    this.deleteCustomerSource.next(id);
   }
 
   delete(id: number) {

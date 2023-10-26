@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ModalService } from 'src/app/services/modal.service';
 import { CustomerService } from 'src/app/services/customer.service';
 import { Customer } from 'src/app/model/customer';
-import { DeleteService } from 'src/app/services/delete.service';
 
 @Component({
   selector: 'app-delete-dialog',
@@ -13,10 +12,10 @@ export class DeleteDialogComponent implements OnInit{
   modalName: string = 'deleteModal';
   customers: Customer[] = [];
   customerIdToDelete: number | null = null;
-  constructor(public modalService: ModalService, public customerService: CustomerService, private deleteService: DeleteService) {}
+  constructor(public modalService: ModalService, public customerService: CustomerService) {}
 
   ngOnInit() {
-    this.deleteService.deleteCustomer$.subscribe(id => {
+    this.customerService.deleteCustomer$.subscribe(id => {
       this.customerIdToDelete = id;
     });
   }
