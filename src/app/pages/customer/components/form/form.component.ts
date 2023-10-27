@@ -3,6 +3,7 @@ import { CustomerService } from 'src/app/services/customer.service';
 import { Customer } from 'src/app/model/customer';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ModalService } from 'src/app/services/modal.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -12,7 +13,7 @@ import { ModalService } from 'src/app/services/modal.service';
 export class FormComponent {
   generos = ['Masculino', 'Feminino'];
   
-  @ViewChild('customerForm') customerForm: any;
+  @ViewChild('customerForm') customerForm!: NgForm;
 
   customer: Customer = {
   id: 0, 
