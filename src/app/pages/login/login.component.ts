@@ -30,7 +30,7 @@ export class LoginComponent {
       this.toastr.success("Login bem sucedido!", "Sucesso!");
       this.router.navigate(['/home']);
     }else{
-      this.toastr.error("Email ou senha incorretos.", "Erro...");
+      this.toastr.error("Nome ou senha incorretos.", "Erro...");
     }
   }
 
