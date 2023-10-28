@@ -10,7 +10,7 @@ export class LoginService {
   private email = 'admin';
   private senha = 'admin';
 
-  validateLogin(inputEmail: string, inputPassword: string): boolean{
-    return inputEmail === this.email && inputPassword === this.senha;
+  validateLogin(inputName: string, inputPassword: string): boolean{
+    return inputName === this.email && inputPassword === this.senha;
   }
 }

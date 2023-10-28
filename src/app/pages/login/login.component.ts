@@ -18,15 +18,15 @@ export class LoginComponent {
 
   constructor(private toastr: ToastrService, private loginService: LoginService, private router: Router, private renderer: Renderer2){
     this.loginForm = new FormGroup({
-      inputEmail: new FormControl('', [Validators.required]),
+      inputName: new FormControl('', [Validators.required]),
       inputPassword: new FormControl('', [Validators.required]),
     })
   }
 
 
   onSubmit(){
-    const { inputEmail, inputPassword } = this.loginForm.value;
-    if (this.loginService.validateLogin(inputEmail, inputPassword)) {
+    const { inputName, inputPassword } = this.loginForm.value;
+    if (this.loginService.validateLogin(inputName, inputPassword)) {
       this.toastr.success("Login bem sucedido!", "Sucesso!");
       this.router.navigate(['/home']);
     }else{
