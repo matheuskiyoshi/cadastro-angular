@@ -18,7 +18,7 @@ export class LoginComponent {
 
   constructor(private toastr: ToastrService, private loginService: LoginService, private router: Router, private renderer: Renderer2){
     this.loginForm = new FormGroup({
-      inputEmail: new FormControl('', [Validators.required, Validators.email]),
+      inputEmail: new FormControl('', [Validators.required]),
       inputPassword: new FormControl('', [Validators.required]),
     })
   }

@@ -7,8 +7,8 @@ export class LoginService {
 
   constructor() { }
 
-  private email = 'admin@admin.com';
-  private senha = 'admin123';
+  private email = 'admin';
+  private senha = 'admin';
 
   validateLogin(inputEmail: string, inputPassword: string): boolean{
     return inputEmail === this.email && inputPassword === this.senha;
