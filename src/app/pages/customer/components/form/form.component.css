@@ -6,17 +6,11 @@
     width: 600px;
     margin: 0 auto;
 }
-
-.container-form h2{
-    margin-bottom: 20px;
-}
-
 .container-form form label {
     text-align: right;
     width: 150px;
     margin-right: 5px;
 }
-
 .container-buttons-form {
     text-align: right;
     padding-top: 10px;
